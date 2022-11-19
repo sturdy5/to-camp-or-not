@@ -4,6 +4,10 @@ import { Router } from '@vaadin/router';
 
 import './pages/app-home';
 import './components/header';
+import './components/local-criteria';
+import './components/fuel-criteria';
+import './components/trip-criteria';
+import './components/trip-results';
 import './styles/global.css';
 
 @customElement('app-index')
