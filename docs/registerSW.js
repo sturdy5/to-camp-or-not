@@ -1,1 +1,0 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/to-camp-or-not/sw.js', { scope: '/to-camp-or-not/' })})}
