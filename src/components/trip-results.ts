@@ -3,7 +3,7 @@ import { customElement, property } from "lit/decorators.js";
 
 import '@shoelace-style/shoelace/dist/components/input/input.js';
 import '@shoelace-style/shoelace/dist/components/icon/icon.js';
-import { TripCalculator } from "../types/TripCalculator";
+import { TripCalculator } from "../custom-types/TripCalculator";
 
 @customElement('trip-results')
 class TripResults extends LitElement {

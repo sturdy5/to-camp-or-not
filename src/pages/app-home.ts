@@ -8,8 +8,8 @@ import '@shoelace-style/shoelace/dist/components/card/card.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 
 import { styles } from '../styles/shared-styles';
-import { LocalConfig } from '../types/Types.js';
-import { TripCalculator } from '../types/TripCalculator';
+import { LocalConfig } from '../custom-types/Types.js';
+import { TripCalculator } from '../custom-types/TripCalculator';
 
 @customElement('app-home')
 export class AppHome extends LitElement {
