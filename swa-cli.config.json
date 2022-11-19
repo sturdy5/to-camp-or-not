@@ -3,7 +3,7 @@
   "configurations": {
     "pwa-starter": {
       "appLocation": ".",
-      "outputLocation": "dist",
+      "outputLocation": "docs",
       "appBuildCommand": "npm run build --if-present",
       "run": "npm start",
       "appDevserverUrl": "http://localhost:3000"
