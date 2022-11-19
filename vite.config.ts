@@ -7,7 +7,6 @@ export default defineConfig({
   build: {
     sourcemap: true,
     assetsDir: "code",
-    outDir: "docs",
   },
   server: {
     port: 3000,
@@ -18,8 +17,8 @@ export default defineConfig({
       strategies: "injectManifest",
       injectManifest: {
         swSrc: 'public/sw.js',
-        swDest: 'docs/sw.js',
-        globDirectory: 'docs',
+        swDest: 'dist/sw.js',
+        globDirectory: 'dist',
         globPatterns: [
           '**/*.{html,js,css,json, png}',
         ],
