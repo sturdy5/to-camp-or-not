@@ -3,7 +3,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
+  base: "/to-camp-or-not/",
   build: {
     sourcemap: true,
     assetsDir: "code",

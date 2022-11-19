@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))r(o);new MutationObserver(o=>{for(const s of o)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&r(n)}).observe(document,{childList:!0,subtree:!0});function i(o){const s={};return o.integrity&&(s.integrity=o.integrity),o.referrerpolicy&&(s.referrerPolicy=o.referrerpolicy),o.crossorigin==="use-credentials"?s.credentials="include":o.crossorigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function r(o){if(o.ep)return;o.ep=!0;const s=i(o);fetch(o.href,s)}})();const uo="modulepreload",co=function(e){return"/"+e},pi={},ho=function(t,i,r){if(!i||i.length===0)return t();const o=document.getElementsByTagName("link");return Promise.all(i.map(s=>{if(s=co(s),s in pi)return;pi[s]=!0;const n=s.endsWith(".css"),u=n?'[rel="stylesheet"]':"";if(!!r)for(let d=o.length-1;d>=0;d--){const c=o[d];if(c.href===s&&(!n||c.rel==="stylesheet"))return}else if(document.querySelector(`link[href="${s}"]${u}`))return;const l=document.createElement("link");if(l.rel=n?"stylesheet":uo,n||(l.as="script",l.crossOrigin=""),l.href=s,document.head.appendChild(l),n)return new Promise((d,c)=>{l.addEventListener("load",d),l.addEventListener("error",()=>c(new Error(`Unable to preload CSS for ${s}`)))})})).then(()=>t())};/**
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))r(o);new MutationObserver(o=>{for(const s of o)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&r(n)}).observe(document,{childList:!0,subtree:!0});function i(o){const s={};return o.integrity&&(s.integrity=o.integrity),o.referrerpolicy&&(s.referrerPolicy=o.referrerpolicy),o.crossorigin==="use-credentials"?s.credentials="include":o.crossorigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function r(o){if(o.ep)return;o.ep=!0;const s=i(o);fetch(o.href,s)}})();const uo="modulepreload",co=function(e){return"/to-camp-or-not/"+e},pi={},ho=function(t,i,r){if(!i||i.length===0)return t();const o=document.getElementsByTagName("link");return Promise.all(i.map(s=>{if(s=co(s),s in pi)return;pi[s]=!0;const n=s.endsWith(".css"),u=n?'[rel="stylesheet"]':"";if(!!r)for(let d=o.length-1;d>=0;d--){const c=o[d];if(c.href===s&&(!n||c.rel==="stylesheet"))return}else if(document.querySelector(`link[href="${s}"]${u}`))return;const l=document.createElement("link");if(l.rel=n?"stylesheet":uo,n||(l.as="script",l.crossOrigin=""),l.href=s,document.head.appendChild(l),n)return new Promise((d,c)=>{l.addEventListener("load",d),l.addEventListener("error",()=>c(new Error(`Unable to preload CSS for ${s}`)))})})).then(()=>t())};/**
  * @license
  * Copyright 2019 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -1085,7 +1085,7 @@ found at http://polymer.github.io/PATENTS.txt
             </div>
           </sl-card>
 
-          <sl-button href="${"/"}about" variant="primary">About</sl-button>
+          <sl-button href="${"/to-camp-or-not/"}about" variant="primary">About</sl-button>
         </div>
 
         <pwa-install>Install To Camp or Not</pwa-install>
@@ -1140,7 +1140,7 @@ found at http://polymer.github.io/PATENTS.txt
       <header>
 
         <div id="back-button-block">
-          ${this.enableBack?et`<sl-button href="${"/"}">
+          ${this.enableBack?et`<sl-button href="${"/to-camp-or-not/"}">
             Back
           </sl-button>`:null}
 
@@ -1939,11 +1939,11 @@ found at http://polymer.github.io/PATENTS.txt
           opacity: 1;
         }
       }
-    `}constructor(){super()}firstUpdated(){var t;new Q((t=this.shadowRoot)==null?void 0:t.querySelector("#routerOutlet")).setRoutes([{path:"/",animate:!0,children:[{path:"",component:"app-home"},{path:"about",component:"app-about",action:async()=>{await ho(()=>import("./app-about.477f48b3.js"),[])}}]}])}render(){return et`
+    `}constructor(){super()}firstUpdated(){var t;new Q((t=this.shadowRoot)==null?void 0:t.querySelector("#routerOutlet")).setRoutes([{path:"/to-camp-or-not/",animate:!0,children:[{path:"",component:"app-home"},{path:"about",component:"app-about",action:async()=>{await ho(()=>import("./app-about.b98ab681.js"),[])}}]}])}render(){return et`
       <div>
         <main>
           <div id="routerOutlet"></div>
         </main>
       </div>
     `}};vr=Kn([at("app-index")],vr);export{an as a,at as e,Gt as i,D as s,et as y};
-//# sourceMappingURL=index.b862fb9f.js.map
+//# sourceMappingURL=index.dcf545e8.js.map
